@@ -1,0 +1,180 @@
+@import "normalize.css";
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5em;
+
+  color: #22313F;
+}
+
+article {
+  padding: 1.5em 1em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.personal {
+  font-size: 1em
+}
+
+a,
+a:focus,
+a:visited,
+a:hover {
+  color: #1E8BC3;
+}
+
+.muted {
+  color: #BFBFBF;
+}
+
+.muted .date,
+.muted a {
+  color: #ABB7B7;
+}
+
+.inline {
+  display: inline-block;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+h1, h2 {
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+h3 a {
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 2em;
+  height: 2em;
+}
+
+h3 {
+  font-size: 1.0em;
+  font-weight: 400;
+  padding-top: 0.2em;
+}
+
+.entry {
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+section, p {
+  margin: 1.3em 0;
+}
+
+article section:first-of-type,
+section p:first-of-type,
+section h3:first-of-type {
+  margin-top: 0;
+}
+
+article section:last-of-type,
+article section:last-of-type p:last-of-type {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-left: 1.2em;
+  margin-top: 0;
+  padding: 0;
+  text-align: justify
+}
+
+.columns {
+  width: 100%;
+  position: relative;
+}
+
+.columns div:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.columns div:nth-child(2) {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.columns div:nth-child(3) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+}
+.name {
+  text-align: center;
+}
+@media print {
+  body {
+    font-size: 13px;
+  }
+
+  article {
+    padding: 1em;
+  }
+
+  section, p {
+    margin: 0.5em 0;
+  }
+
+  hr {
+    margin-top: 0.5em;
+  }
+
+  .hide-print {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+  .columns div:nth-child(1),
+  .columns div:nth-child(2),
+  .columns div:nth-child(3) {
+    width: 100%;
+    position: static;
+    text-align: left;
+  }
+}
+
+.section {
+  border-bottom: 1px solid black
+}
+
+.name > h5 {
+  font-weight: 300;
+}
+
+.name > h5 {
+  margin-top: 0.5em;
+}
