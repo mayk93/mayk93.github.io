@@ -50,19 +50,60 @@
                 </div>
 
                 <div>
-                    November 2016
+                    November 2016 - February 2018
                 </div>
             </div>
             <ul>
                 <li>
                     I designed and implemented a deep learning, <b>convolutional neural network</b>, using the
                     <a href="https://www.tensorflow.org/">Tensorflow</a> framework together with
-                    <a href="http://www.numpy.org/">numpy</a>, in python 3.
+                    <a href="http://www.numpy.org/">numpy</a>, in python 3. This was based on Yann LeCun's
+                    <a href="http://yann.lecun.com/exdb/lenet/">LeNet-5</a> network, adapted for text data as opposed to
+                    image inputs.
                 </li>
                 <li>
                     Additionally, I architected and deployed a client application capable of reaching both
                     regular sites and <b>hidden services</b> using
                     <a href="https://github.com/aio-libs/aiohttp">aiohttp</a>.
+                </li>
+                <li>
+                    I wrote an <b>orchestration system</b> for deploying and monitoring tor nodes. I used the python
+                    <a href="https://github.com/boto/boto3">boto3</a> library to automatically provide and clean up
+                    resources used by tor nodes, based on data obtained from status providers, both internal and
+                    external such as <a href="https://torstatus.blutmagie.de/">blutmagie</a>.
+                </li>
+                <li>
+                    Set up a <b>private tor network</b> using <a href="https://github.com/torproject/chutney">chutney</a>
+                    ( also available <a href="https://gitweb.torproject.org/chutney.git">here</a> ) and deployed
+                    several patched Tor nodes, in order to assess different data collection strategies.
+                </li>
+                <li>
+                    Used the python <a href="https://stem.torproject.org/">stem</a> library to build a client capable of
+                    quickly assessing the status of hidden services on the tor network. This was done as part of an
+                    effort to better understand and map the <b>hidden service lifecycle</b>.
+                </li>
+                <li>
+                    I improved the matching engine by moving from a regex search approach, done with the re2 library to
+                    a search based on the
+                    <a href="https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm">Aho–Corasick algorithm</a>.
+                    This was done using <a href="https://github.com/mayk93/pyahocorasick">pyahocorasick</a>.
+                </li>
+                <li>
+                    Worked on developing a user facing, <b>mobile first</b> application,
+                    built with <a href="https://vuejs.org/">Vue.js</a> and it's material design implementation,
+                    <a href="https://vuetifyjs.com/en/">Vuetify</a>
+                </li>
+                <li>
+                    Used <a href="https://docs.seleniumhq.org/">Selenium</a> both for end to end testing and for content
+                    collection. I build using Selenium a web crawler that rendered a Firefox browser in a
+                    <a href="https://www.x.org/wiki/">x server</a> and used the browser to access otherwise unavailable
+                    content, such as those hidden behind a captcha.
+                </li>
+                <li>
+                    I wrote a client that used
+                    <a href="https://developers.google.com/web/updates/2017/04/headless-chrome">headless Chrome</a>
+                    to visit and archive websites. The generated content was stored on
+                    <a href="https://aws.amazon.com/s3/">S3</a>
                 </li>
             </ul>
 
@@ -84,7 +125,8 @@
                     <a href="https://twistedmatrix.com/trac/">Twisted</a> library for python2.
                 </li>
                 <li>
-                    Dramatically improved <b>performance</b> by using
+                    Dramatically improved the <b>performance</b> of the document matching engine by switching from
+                    python's native <a href="https://docs.python.org/2/library/re.html">re</a> library to
                     <a href="https://github.com/google/re2">Google’s re2 regex engine</a>.
                 </li>
                 <li>
@@ -110,7 +152,8 @@
                     <a href="http://django-highcharts.readthedocs.io/en/latest/">highcharts</a>.
                 </li>
                 <li>
-                    Applied good software engineering practices, <b>TDD</b> and <b>agile development</b>.
+                    Learned about and applied software engineering good practices such as <b>TDD</b> and
+                    <b>agile development</b>.
                 </li>
             </ul>
 
