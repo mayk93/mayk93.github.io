@@ -109,6 +109,18 @@
             </div>
             <ul>
                 <li>
+                    Using <a href="https://nodejs.org/en/">node</a>, I build an evidence archiving system. This system
+                    used <a href="https://developers.google.com/web/updates/2017/04/headless-chrome">headless Chrome</a>
+                    to visit and archive websites. Based on demand, node worker processes are created on a
+                    <a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html">
+                    EC2 autoscaling group</a>. They consume an api that provides them with urls to archive. The node
+                    process connect to the headless chrome instance via
+                    <a href="https://github.com/GoogleChrome/puppeteer">puppeteer</a> and drive the browser to the url
+                    from the api. There, they screenshot and pdf the website or hidden service. The generated content
+                    is stored on <a href="https://aws.amazon.com/s3/">S3</a>, using the node
+                    <a href="https://aws.amazon.com/sdk-for-node-js/">aws sdk</a>.
+                </li>
+                <li>
                     I designed and implemented a deep learning, <b>convolutional neural network</b>, using the
                     <a href="https://www.tensorflow.org/">Tensorflow</a> framework together with
                     <a href="http://www.numpy.org/">numpy</a>, in python 3. This was based on Yann LeCun's
@@ -157,12 +169,6 @@
                     collection. I build using Selenium a web crawler that rendered a Firefox browser in a
                     <a href="https://www.x.org/wiki/">x server</a> and used the browser to access otherwise unavailable
                     content, such as those hidden behind a captcha.
-                </li>
-                <li>
-                    I wrote a client that used
-                    <a href="https://developers.google.com/web/updates/2017/04/headless-chrome">headless Chrome</a>
-                    to visit and archive websites. The generated content was stored on
-                    <a href="https://aws.amazon.com/s3/">S3</a>
                 </li>
             </ul>
 
@@ -320,7 +326,7 @@
         <ul>
             <li>Very good knowledge of python and javascript.</li>
             <li>Very good knowledge and industry experience with React and its ecosystem and Django.</li>
-            <li>Working knowledge of node and MongoDB.</li>
+            <li>Good knowledge of <a href="https://nodejs.org/en/">node.js</a> and MongoDB.</li>
             <li>I can work decently with Go and C and to a lesser extent Rust.</li>
             <li>Additionally, I have working experience with AWS, Elastic Search and other cloud services.</li>
         </ul>
